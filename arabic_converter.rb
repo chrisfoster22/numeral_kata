@@ -13,7 +13,7 @@ class ArabicConverter
     arabic = 0
     numerals.each do |k, v|
       if numeral.include?(k)
-        count =  numeral.scan(k).count
+        count = numeral.scan(k).count
         count.times {arabic += v}
         numeral.slice!(k)
       end
