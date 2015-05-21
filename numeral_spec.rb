@@ -32,6 +32,10 @@ describe NumeralConverter do
     expect(numeral_converter.convert(11)).to eql("XI")
   end
 
+  it 'returns "D" when passed 500' do
+    expect(numeral_converter.convert(500)).to eql "D"
+  end
+
   it 'returns "MLXVI" when passed 1066' do
     expect(numeral_converter.convert(1066)).to eql("MLXVI")
   end
